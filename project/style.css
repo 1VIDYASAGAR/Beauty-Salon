@@ -1,0 +1,257 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('img1.jpg');
+    background-size: cover; width: 98;
+    height: 98vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+.header{
+    width: 85%;
+    display: flex;
+    position:fixed;
+    top: 0;
+    justify-content: space-between;
+    color: rgb(17, 12, 12);
+    margin: 15px;
+}
+.body-section:hover{
+    text-shadow: 0px 0px 5px rgb(244, 247, 248);
+
+}
+.header li{
+    list-style-type:none;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.header li:hover{
+    
+  
+    box-shadow: 5px 5px 5px skyblue;
+}
+button{
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.body-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10% 0 0 30%;
+    align-items: center ;
+    color: white;
+}
+h1{
+    font-size: 50px;
+}
+.body-section button{
+    button{
+        background-color: blueviolet;
+        padding: 10px;
+        color: white;
+        width: 100px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+}
+.body-section.contact{
+    background-color: rgb(243, 241, 246);
+    padding: 10px;
+    color: rgb(3, 75, 208);
+    width: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 110px;
+}
+button:hover{
+   
+    box-shadow: 5px 5px 5px skyblue;
+}
+.main{
+    color: white;
+    justify-content: center;
+    margin: 30px;
+}
+.main li:hover{
+    text-shadow: 5px 0px 5px rgb(239, 216, 10);
+    box-shadow: 5px 5px 5px skyblue;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.head{
+    color: white;
+}
+.head a{
+    color: aqua;
+}
+
+
+h4{
+    text-align: right;
+}
+.m{
+    text-align: left;
+}
+.n {
+    display: flex;
+display: inline-table;
+    color: #f9f5f5;
+    margin: left;
+    
+}
+
+.l{
+    text-align:center ;
+    color: aqua;
+}
+
+#back{
+    
+  background-color: aliceblue;
+  color: black;
+  border-radius:    10px;
+  background-image: url('img2.jpg');
+  
+}
+.shopsection{
+    display: flex;
+}
+.box{
+    border: 2px solid rgb(247, 246, 246);
+    height: 400px;
+    width: 25%;
+    margin: 25px;
+    color: white;
+    text-align: center;
+}
+.img{
+    height: 350px;
+    
+}
+.img1{
+    height: 390px;
+}
+.img2{
+    height: 370px;
+}
+.shopsection :hover{
+    text-shadow: 5px 0px 5px rgb(247, 219, 6);
+    box-shadow: 5px 5px 5px skyblue;
+}
+.frame{
+    border: 2px solid rgb(11, 13, 14);
+    height: 550px;
+    width: 96%;
+    margin: 12px;
+    color: white;
+    text-align: center;
+
+}
+.image3{
+    height: 550px;
+}
+.frame :hover{
+    box-shadow: 7px 7px 7px skyblue;
+}
+.table{
+    border: 10px;
+   margin: left;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #000;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.look-book {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.look-book img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+thead{
+    margin: left;
+}
+.tab{
+    border: #fcf6f6;
+    height: 80px;
+    width: 1375px;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+  
+    background-color: rgb(250, 253, 255);
+
+}
+.n{
+    text-align: center;
+    border: solid;
+    width: 715px;
+   margin-left: 350px;
+
+
+}
+.o{
+    border: solid;
+    text-align: center;
+}

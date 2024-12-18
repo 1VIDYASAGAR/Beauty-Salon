@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('img1.jpg') ;
+        }
+        .container  {
+            width: 400px;
+            padding: 25px;
+            background: rgb(247, 249, 249);
+            box-shadow: 0 4px 8px rgba(18, 15, 15, 0.2);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: none;
+        }
+        form.active {
+            display: block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #282f28;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #39accf;
+        }
+        .toggle {
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #007bff;
+        }
+        .toggle:hover {
+            text-decoration: underline;
+        }
+        #m :hover{
+            color: #4cae4c;
+            text-shadow:3px 0px 3px  #007bff;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 id="form-title">Login</h2>
+        <!-- Login Form -->
+        <form id="login-form" class="active">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="button"  id ="m"onclick="login()">Login</button>
+        </form>
+        
+        <!-- Registration Form -->
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Full Name" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="button" onclick="register()">Register</button>
+        </form>
+
+        <div class="toggle" onclick="toggleForms()">Don't have an account? Register here</div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const formTitle = document.getElementById('form-title');
+        const toggleText = document.querySelector('.toggle');
+
+        // Toggle between Login and Register forms
+        function toggleForms() {
+            if (loginForm.classList.contains('active')) {
+                loginForm.classList.remove('active');
+                registerForm.classList.add('active');
+                formTitle.textContent = 'Register';
+                toggleText.textContent = 'Already have an account? Login here';
+            } else {
+                registerForm.classList.remove('active');
+                loginForm.classList.add('active');
+                formTitle.textContent = 'Login';
+                toggleText.textContent = "Don't have an account? Register here";
+            }
+        }
+
+        // Simulated login function
+        function login() {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            if (email && password) {
+                alert(`Logged in with email: ${email}`);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+
+        // Simulated register function
+        function register() {
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+
+            if (name && email && password) {
+                alert(`Registered successfully with name: ${name}, email: ${email}`);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+
+</body>
+</html>
